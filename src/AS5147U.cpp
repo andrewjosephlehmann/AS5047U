@@ -17,6 +17,26 @@ float AS5147U::readAngleDegree() {
     return (float(getAngle()) * 360.0f) / 16384.0f;
 }
 
+
+
+
+float AS5147U::getCumulativeAngle() {
+    float currentRawAngle = readAngleDegree();
+    float delta = currentRawAngle - lastRawAngle;
+
+    // wrap detection
+    if (delta < -180.0f) {
+        delta += 360.0f;
+    } else if (delta > 180.0f) {
+        delta -= 360.0f;
+    }
+
+    cumulativeAngle += delta;
+    lastRawAngle    = currentRawAngle;
+    return cumulativeAngle;
+}
+
+
 int16_t AS5147U::getVelocity() {
     uint16_t raw = readRegister(0x3FFC) & 0x3FFF;
     // Convert from 14-bit signed to int16
