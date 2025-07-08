@@ -82,10 +82,10 @@ To add this library to your PlatformIO project, follow these steps:
 1. Open PlatformIO IDE.
 2. Search for `AS5047P` in the Library Manager UI, or run the following command in the PlatformIO CLI:
    ```
-   pio lib install "jonas-merkle/AS5047P"
+   pio lib install "andrewjosephlehmann/AS5047U"
    ```
 
-## Connecting the AS5047P to Your Arduino
+## Connecting the AS5047U to Your Arduino
 
 ### Arduino Uno
 
