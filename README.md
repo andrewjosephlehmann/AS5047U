@@ -18,7 +18,7 @@ The AS5047P sensor provides high-resolution rotary position sensing with a 14-bi
 
 ## Contents
 
-- [AS5047P - Arduino Library](#as5047p---arduino-library)
+- [AS5047U - Arduino Library](#as5047p---arduino-library)
   - [Overview](#overview)
   - [Features](#features)
   - [Contents](#contents)

@@ -1,5 +1,5 @@
 {
-    "name": "AS5047P",
+    "name": "AS5047U",
     "version": "2.2.2",
     "description": "An Arduino library for the AS5047P high-resolution rotary position sensor. Supporting also the following sensor types: AS5047D, AS5147, AS5147P, AS5247",
     "keywords": "arduino-library, as5047p, spi, sensor, rotary-encoder, high-resolution, rotary-position-sensor, as5x47, as5047d, as5147, as5147p, as5247, encoder, rotaty, angle, uvw, abi",
