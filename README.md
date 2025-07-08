@@ -4,9 +4,9 @@
 
 ## Overview
 
-The **AS5X47U Arduino Library** provides an easy way to interface with the AS5047P high-resolution rotary position sensor, as well as several other sensors from the AS5x47 series. This library supports reading the angular position and other diagnostic information using SPI communication, and is designed to work with a variety of microcontrollers, including Arduino, Adafruit Feather, and Teensy boards.
+The **AS5X47U Arduino Library** is a fork of the AS5047P library and tries to provide an easy way to interface with the AS5047U high-resolution rotary position sensor, as well as several other sensors from the AS5x47 series. This library supports reading the angular position and other diagnostic information using SPI communication, and is designed to work with a variety of microcontrollers, including Arduino, Adafruit Feather, and Teensy boards.
 
-The AS5047P sensor provides high-resolution rotary position sensing with a 14-bit resolution, making it ideal for applications that require accurate angular measurements, such as robotics, motor control, and industrial automation.
+The AS5047U sensor provides high-resolution rotary position sensing with a 14-bit resolution, making it ideal for applications that require accurate angular measurements, such as robotics, motor control, and industrial automation.
 
 ## Features
 
@@ -26,7 +26,7 @@ The AS5047P sensor provides high-resolution rotary position sensing with a 14-bi
     - [Install via Arduino Library Manager](#install-via-arduino-library-manager)
     - [Manual Installation](#manual-installation)
     - [Install via PlatformIO Library Manager](#install-via-platformio-library-manager)
-  - [Connecting the AS5047P to Your Arduino](#connecting-the-as5047p-to-your-arduino)
+  - [Connecting the AS5047U to Your Arduino](#connecting-the-as5047p-to-your-arduino)
     - [Arduino Uno](#arduino-uno)
     - [Arduino Mega](#arduino-mega)
     - [Adafruit Feather M0](#adafruit-feather-m0)
@@ -35,11 +35,7 @@ The AS5047P sensor provides high-resolution rotary position sensing with a 14-bi
       - [Teensy 3.6](#teensy-36)
       - [Teensy 4.0](#teensy-40)
       - [Teensy 4.1](#teensy-41)
-  - [Usage Guide](#usage-guide)
     - [Basic Example](#basic-example)
-    - [Advanced Usage](#advanced-usage)
-  - [License](#license)
-  - [Project Status \& To-Do's](#project-status--to-dos)
 
 ## Supported Sensors
 
