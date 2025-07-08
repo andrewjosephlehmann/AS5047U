@@ -1,21 +1,19 @@
-# AS5047P - Arduino Library
+# ASX047U - Arduino Library
 
 ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jonas-merkle/AS5047P/Arduino-Library-CI.yml?branch=master&label=build%20master) ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jonas-merkle/AS5047P/Arduino-Library-CI.yml?branch=develop&label=build%20develop) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jonas-merkle/AS5047P) ![GitHub](https://img.shields.io/github/license/jonas-merkle/AS5047P) ![GitHub issues](https://img.shields.io/github/issues/jonas-merkle/AS5047P) ![GitHub pull requests](https://img.shields.io/github/issues-pr/jonas-merkle/AS5047P) ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 
 ## Overview
 
-The **AS5047P Arduino Library** provides an easy way to interface with the AS5047P high-resolution rotary position sensor, as well as several other sensors from the AS5x47 series. This library supports reading the angular position and other diagnostic information using SPI communication, and is designed to work with a variety of microcontrollers, including Arduino, Adafruit Feather, and Teensy boards.
+The **AS5X47U Arduino Library** provides an easy way to interface with the AS5047P high-resolution rotary position sensor, as well as several other sensors from the AS5x47 series. This library supports reading the angular position and other diagnostic information using SPI communication, and is designed to work with a variety of microcontrollers, including Arduino, Adafruit Feather, and Teensy boards.
 
 The AS5047P sensor provides high-resolution rotary position sensing with a 14-bit resolution, making it ideal for applications that require accurate angular measurements, such as robotics, motor control, and industrial automation.
 
 ## Features
 
-- Support for multiple sensor models: AS5047P, AS5047D, AS5147, AS5147P, and AS5247.
+- Support for multiple sensor models: AS5047U, AS5147U, and AS5247U.
 - Easy-to-use interface for reading angular position.
 - SPI communication for reliable data transmission.
-- Example sketches to help get started quickly.
-- Compatibility with Arduino, Adafruit Feather, Teensy, and other boards.
-
+  
 ## Contents
 
 - [AS5047U - Arduino Library](#as5047p---arduino-library)
@@ -47,14 +45,6 @@ The AS5047P sensor provides high-resolution rotary position sensing with a 14-bi
 
 The following sensors of the **AS5x47** series of rotary position sensors are supported by this library:
 
-- [**AS5047P**](https://ams.com/documents/20143/36005/AS5047P_DS000324_2-00.pdf/a7d44138-51f1-2f6e-c8b6-2577b369ace8)
-- [**AS5047D**](https://ams.com/documents/20143/36005/AS5047D_DS000394_2-00.pdf/c7225c06-112f-82c5-4471-17a2711a7f0e)
-- [**AS5147**](https://ams.com/documents/20143/36005/AS5147_DS000307_2-00.pdf/6921a55b-7cba-bf20-78c0-660d62bd0a5b)
-- [**AS5147P**](https://ams.com/documents/20143/36005/AS5147P_DS000328_2-00.pdf/847d41be-7afa-94ad-98c2-8617a5df5b6f)
-- [**AS5247**](https://ams.com/documents/20143/36005/AS5247_DS000354_2-00.pdf/db765ebd-b442-4d00-8343-d4f95a847995)
-
-Not supported are the following sensors:
-
 - [AS5047U](https://ams.com/documents/20143/36005/AS5047U_DS000637_1-00.pdf/8639418f-6c3a-1624-4e6f-18f52c962099)
 - [AS5147U](https://ams.com/documents/20143/36005/AS5147U_AS5247U_DS000639_4-00.pdf/1141a423-d438-ff83-df65-0adc533d6801)
 - [AS5247U](https://ams.com/documents/20143/36005/AS5147U_AS5247U_DS000639_4-00.pdf/1141a423-d438-ff83-df65-0adc533d6801)
@@ -76,7 +66,7 @@ The easiest way to install this library is to use the built-in Arduino Library M
 
 1. Open the Arduino IDE.
 2. Go to **Sketch > Include Library > Manage Libraries...**
-3. In the Library Manager, type `AS5047P` in the search bar.
+3. In the Library Manager, type `AS5047U` in the search bar.
 4. Install the latest version of the library.
 
 You can also upgrade the library to the newest release via the Arduino Library Manager. For more information, refer to the [Arduino Libraries Guide](https://www.arduino.cc/en/guide/libraries). Note that you need at least version 1.6.2 of the Arduino IDE to use the Library Manager.
@@ -103,7 +93,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 ### Arduino Uno
 
-| AS5047P Pin | Arduino Uno Pin | Comment |
+| AS5047U Pin | Arduino Uno Pin | Comment |
 |:-----------:|:---------------:|:--------|
 | GND         | GND             | Ground connection |
 | VDD         | 5V              | Power supply (5V) |
@@ -115,7 +105,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 ### Arduino Mega
 
-| AS5047P Pin | Arduino Mega Pin | Comment |
+| AS5047U Pin | Arduino Mega Pin | Comment |
 |:-----------:|:----------------:|:--------|
 | GND         | GND              | Ground connection |
 | VDD         | 5V               | Power supply (5V) |
@@ -127,7 +117,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 ### Adafruit Feather M0
 
-| AS5047P Pin | Adafruit Feather M0 Pin | Comment |
+| AS5047U Pin | Adafruit Feather M0 Pin | Comment |
 |:-----------:|:-----------------------:|:--------|
 | GND         | GND                     | Ground connection |
 | VDD         | 3V                      | Power supply (3.3V) |
@@ -143,7 +133,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 #### Teensy 3.5
 
-| AS5047P Pin | Teensy Pin      | Comment |
+| AS5047U Pin | Teensy Pin      | Comment |
 |:-----------:|:---------------:|:--------|
 | GND         | GND             | Ground connection |
 | VDD         | 3V              | Power supply (3.3V) |
@@ -157,7 +147,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 #### Teensy 3.6
 
-| AS5047P Pin | Teensy Pin      | Comment |
+| AS5047U Pin | Teensy Pin      | Comment |
 |:-----------:|:---------------:|:--------|
 | GND         | GND             | Ground connection |
 | VDD         | 3V              | Power supply (3.3V) |
@@ -171,7 +161,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 #### Teensy 4.0
 
-| AS5047P Pin | Teensy Pin      | Comment |
+| AS5047U Pin | Teensy Pin      | Comment |
 |:-----------:|:---------------:|:--------|
 | GND         | GND             | Ground connection |
 | VDD         | 3V              | Power supply (3.3V) |
@@ -185,7 +175,7 @@ To add this library to your PlatformIO project, follow these steps:
 
 #### Teensy 4.1
 
-| AS5047P Pin | Teensy Pin      | Comment |
+| AS5047U Pin | Teensy Pin      | Comment |
 |:-----------:|:---------------:|:--------|
 | GND         | GND             | Ground connection |
 | VDD         | 3V              | Power supply (3.3V) |
@@ -197,67 +187,27 @@ To add this library to your PlatformIO project, follow these steps:
 
 **Warning: Ensure the sensor is powered with 3.3V to avoid damage to the Teensy board.**
 
-## Usage Guide
-
 ### Basic Example
 
-The following example demonstrates how to read the angle from the AS5047P sensor using an Arduino board.
+The following example demonstrates how to read the angle from the AS5047U sensor using an Arduino board.
 
 ```cpp
 #include <SPI.h>
-#include <AS5047P.h>
+#include <AS5047U.h>
 
-AS5047P as5047p(9); // Chip select pin 9
+AS5047P sensor(9); // Chip select pin 9
 
 void setup() {
   Serial.begin(9600);
   SPI.begin();
-  as5047p.initSPI();
+  sensor.initSPI();
 }
 
 void loop() {
-  uint16_t angle = as5047p.readAngle();
+  uint16_t angle = sensor.readAngle();
   Serial.print("Angle: ");
   Serial.println(angle);
   delay(500);
 }
 ```
-
-### Advanced Usage
-
-The library provides several functions for advanced interaction with the sensor, including reading diagnostic registers and status flags. Refer to the [documentation](https://jonas-merkle.github.io/AS5047P/docs/master/html/index.html) for a complete API reference and usage examples.
-
-## License
-
-This project is licensed under the **GNU General Public License v3.0**. You can find the full license text in the [LICENSE](./LICENSE) file or visit the [GPL v3.0 License page](https://www.gnu.org/licenses/gpl-3.0.en.html) for more information.
-
-## Project Status & To-Do's
-
-| Status | Task / ToDo |
-|:------:|:------------|
-|   ✅   | Read functions for all registers implemented. |
-|   ✅   | Doxygen comments added. |
-|   ✅   | [BasicReadAngle.ino](examples/BasicReadAngle/BasicReadAngle.ino) successfully tested on an Arduino Mega & Adafruit Feather M0 |
-|   ✅   | [BasicReadAngleAndDebugInfo.ino](examples/BasicReadAngleAndDebugInfo/BasicReadAngleAndDebugInfo.ino) successfully tested on an Arduino Mega & Adafruit Feather M0 |
-|   ✅   | [PrintAllSettings.ino](examples/PrintAllSettings/PrintAllSettings.ino) successfully tested on an Arduino Mega & Adafruit Feather M0 |
-|   ✅   | Adding a CI pipeline. |
-|   ✅   | Build & deploy Doxygen documentation for the library. |
-|   ✅   | Sensor status output as string. |
-|   ✅   | [keywords.txt](keywords.txt) updated for main library functions. |
-|   ✅   | Switch to unions... |
-|   ✅   | Write functions for all registers implemented. |
-|   ✅   | Parity check on incoming data. |
-|   ✅   | Improve initSPI() |
-|   ✅   | ToString() for Error_t |
-|   ✅   | Adding Library to Arduino Library Manager 🥳 |
-|   ✅   | Adding Library to PlatformIO Library Manager 🥳 |
-|   ✅   | Documentation update. |
-|   ✅   | [keywords.txt](keywords.txt) updated for all library functions. |
-|   🚧   | [Readme.md](README.md) update. |
-|   🚧   | Test of all write functions |
-|   🚧   | Test of all read functions |
-|   ❌   | Porting the library to be compatible with the STM32 HAL |
-|   ❌   | Additional examples. |
-|   ❌   | Unit Tests?! |
-|   ❌   | Implementation & test of programming the one-time programmable register of the AS5047P. |
 
