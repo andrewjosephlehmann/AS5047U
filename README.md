@@ -21,7 +21,6 @@ The AS5047U sensor provides high-resolution rotary position sensing with a 14-bi
   - [Features](#features)
   - [Contents](#contents)
   - [Supported Sensors](#supported-sensors)
-  - [Documentation](#documentation)
   - [Installation Instructions](#installation-instructions)
     - [Install via Arduino Library Manager](#install-via-arduino-library-manager)
     - [Manual Installation](#manual-installation)
@@ -44,15 +43,6 @@ The following sensors of the **AS5x47** series of rotary position sensors are su
 - [AS5047U](https://ams.com/documents/20143/36005/AS5047U_DS000637_1-00.pdf/8639418f-6c3a-1624-4e6f-18f52c962099)
 - [AS5147U](https://ams.com/documents/20143/36005/AS5147U_AS5247U_DS000639_4-00.pdf/1141a423-d438-ff83-df65-0adc533d6801)
 - [AS5247U](https://ams.com/documents/20143/36005/AS5147U_AS5247U_DS000639_4-00.pdf/1141a423-d438-ff83-df65-0adc533d6801)
-
-## Documentation
-
-The library documentation is deployed on GitHub Pages. For detailed reference on the API, examples, and usage guides, check the links below:
-
-| Branch | Link |
-|--------|------|
-| Master | [Documentation](https://jonas-merkle.github.io/AS5047P/docs/master/html/index.html) |
-| Develop | [Documentation](https://jonas-merkle.github.io/AS5047P/docs/develop/html/index.html) |
 
 ## Installation Instructions
 
