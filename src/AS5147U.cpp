@@ -37,6 +37,9 @@ float AS5147U::getCumulativeAngle() {
 }
 
 
+
+
+
 int16_t AS5147U::getVelocity() {
     uint16_t raw = readRegister(0x3FFC) & 0x3FFF;
     // Convert from 14-bit signed to int16
